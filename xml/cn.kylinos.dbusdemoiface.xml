@@ -1,0 +1,11 @@
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN"
+	"http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
+<node name="/cn/kylinos/demo/dbus">
+  <interface name="cn.kylinos.dbus.demo1">
+    <method name="increase"/>
+    <method name="decrease"/>
+    <method name="get"/>
+    <method name="reset"/>
+    <signal name="valueChanged"/>
+  </interface>
+</node>
