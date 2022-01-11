@@ -3,6 +3,9 @@
 
 #include <QMainWindow>
 
+#include "demoadaptor1.h"
+#include "demoif1.h"
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -28,5 +31,6 @@ private slots:
 private:
 	void connectSignals();
     Ui::MainWindow *ui;
+	cn::kylinos::dbus::demo1 *m_demoDbus1 = nullptr;
 };
 #endif // MAINWINDOW_H
